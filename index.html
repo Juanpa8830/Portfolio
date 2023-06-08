@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- MENU-HEADER-->
+    <div class="header-container">
+        <header>
+            <div class="logo">
+                <a href="#">Juan Pablo</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick ="select()">INICIO</a></li>
+                    <li><a href="#Aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="select()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="ShowHideMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECTION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="banner-content">
+            <div class="image-container">
+                <img src="/img/profile picture.jpeg" alt="photo">
+            </div>
+            <h1>JUAN PABLO GUERRERO RIOS</h1>
+            <h2>Full-Stack developer</h2>
+            <h3>Petroleum Engineer</h3>
+            <div class="social">
+                <a href="https://github.com/Juanpa8830"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juanpabloguerrerorios/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/JuanPa8830"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://wellfound.com/juan-pablo-guerrero-rios"><i class="fa-brands fa-angellist"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT ME-->
+
+    <section id="Aboutme" class="aboutme">
+        <div class="content-section">
+            <h2>About me</h2>
+            <p> <span> Hello! My name is Juan Pablo Guerrero Ríos </span> I'm a full-stack development student currently
+                enrolled
+                in a remote software development school called Microverse that uses pair programming and real-world
+                projects to teach development. </p>
+
+            <br>
+
+            <p> I've spent the last several months completely immersed in remote development, building everything
+                from landing pages to Rails APIs. During this process, I have developed extensive
+                knowledge in the next stacks: </p>
+
+            <br>
+
+            <p> - Front-end development: JavaScript |React.js | Redux-Redux Toolkit| CSS3 | HTML5.</p>
+
+            <p> - Back-end development: Ruby | Rails | PostgreSQL </p>
+
+            <p> - Tools & Methods: Git, GitHub, Render, Mobile/Responsive Development, RSpec, TDD, Chrome Dev Tools.
+            </p>
+
+            <p> - Professional: Remote Pair-Programming, Teamwork, Mentoring, Leadership.</p>
+
+            <br>
+            <p>
+                As a petroleum engineer, I worked in the Colombian oil industry for two years where I learned
+                several of the skills I now use every day as a developer: problem-solving, effective communication,
+                multi-tasking, and more. I regularly won employee awards, and I now bring the same kind of energy to
+                all of my work, including my growth as a software engineer." I also lived in Australia for several
+                months, where I spent plenty of days working with a diverse population of people in a stressful,
+                fast-paced environment, so I was already a pro at juggling the empathy, communication, and work
+                ethic, needed to succeed in the dev world.
+            </p>
+            <br>
+            <div class="row">
+                <!-- personal data-->
+                <div class="column">
+                    <h3>Personal info</h3>
+                    <ul>
+                        <li>
+                            <strong>Birthday: </strong>
+                            30-08-1988
+                        </li>
+                        <li>
+                            <strong>Phone number: </strong>
+                            +57 300 2690883
+                        </li>
+
+                        <li>
+                            <strong>Email adress: </strong>
+                            guerrerorios.juanpablo@gmail.com
+                        </li>
+
+                        <li>
+                            <strong>Adress: </strong>
+                            Calle 23c # 72-50 Bogota, Colombia
+                        </li>
+
+                        <li>
+                            <strong>Position </strong>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- interests-->
+                <div class="column">
+                    <h3>Interested in</h3>
+                    <div class="interests-container">
+                        <div class="interest">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Video games</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Music</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Traveling</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <span>Sports</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Cars</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>Pets</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Photo</span>
+                        </div>
+                        <div class="interest">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>Development</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <button id="resume">
+            
+                <a href="files/Resume - Juan Pablo Guerrero (3).pdf" download="Juan Pablo Guerrero (3).pdf">Download Resume <i
+                        class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECTION SKILLS-->
+
+    <section id="skills" class="skills">
+        <div class="skill-content">
+            <h2>Skills</h2>
+            <div class="row">
+                <!-- Tecnical skills-->
+                <div class="column">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>79%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5 & CSS3</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React.js</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ruby / Ruby on rails</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PostgreSQL</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git / Github</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional skills-->
+                <div class="column">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Collaboration and Teamwork</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Communication and Support</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Self-Discipline</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Problem-Solving</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Goal Setting and Planning</span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="curriculum-content">
+            <h2>Curriculum</h2>
+            <div class="row">
+                <div class="left-col">
+                    <h3>Education</h3>
+                    <div class="left-item">
+                        <h4>Full-Stack Developer</h4>
+                        <span class="house">Microverse</span>
+                        <span class="date">2022 - 2023</span>
+                        <br>
+                        <br>
+                        <p>Activities and societies:
+                            <br>
+                            <br>
+                            - Adept at working in pairs remotely, actively communicating and exchanging knowledge with
+                            other devs.
+                            <br>
+                            <br>
+                            - Utilized coaching and mentoring abilities to aid in the team member's personal and
+                            professional development.
+                            <br>
+                            <br>
+                            - Ensured the successful delivery and accomplishment of project goals by overseeing
+                            end-to-end software
+                            projects.
+                            <br>
+                            <br>
+                            - Strong project management skills were on display, with projects being planned, carried
+                            out, and resources
+                            being used wisely.
+                            <br>
+                            <br>
+                            I am now fully prepared to succeed as a remote web developer working internationally thanks
+                            to Microverse's
+                            Full-Stack Web Development program. I developed crucial abilities in online application
+                            development, remote
+                            processes, and communication through Microverse.
+                            <br>
+                            <br>
+
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <h4>Master&apos;s degree in Petroleum Engineering.</h4>
+                        <span class="house">Los Andes University</span>
+                        <span class="date">2016 - 2017</span>
+                        <br>
+                        <br>
+                        <p>Emphasis on Hydrocarbon Reservoirs, Enhanced Oil Recovery (EOR), Unconventional Reservoirs,
+                            Economic Project
+                            Evaluation, Production, Water Injection, Risk Analysis and Decision-Making, and Reservoir
+                            Simulation.</p>
+                        <br>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="left-item">
+                        <h4>Petroleum Engineer</h4>
+                        <span class="house">America University</span>
+                        <span class="date">2006 - 2012</span>
+                        <br>
+                        <br>
+                        <p>Petroleum Engineer with experience in drilling and production operations, as well as in
+                            equipment and tool
+                            supervision and logistics, achieving operational efficiency. I am a member and team leader
+                            focused on continuous
+                            learning of new trends in the oil industry. I am enthusiastic about the topic of digital
+                            revolution and
+                            transformation, as well as software development. I am available for relocation.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                    <h3>Experience</h3>
+                    <div class="right-item">
+                        <h4>Full-Stack Developer</h4>
+                        <span class="house">Self-employed</span>
+                        <span class="date">2022 - 2023</span>
+                        <p>I have a sizable portfolio of over 46 projects, all of which were developed using different
+                            technology stacks like HTML5, CSS3, JavaScript, React/Redux, and Ruby on Rails. The Cozy
+                            Homes API, a Ruby-based back-end project with a simple UI and thorough rental history, is
+                            one of my most notable projects. The user-friendly React UI of Cozy Homes compliments the
+                            API and makes renting a home simple.</p>
+                        <br>
+                        <p>Additionally, I created the My-Budget App, a dynamic and user-friendly spending monitoring
+                            program. Users may track
+                            spending, synchronize data between devices, and create custom categories for tracking that
+                            is more relevant to them.
+                            Both the front end and the back end of this project used Ruby on Rails, and PostgreSQL was
+                            used for best
+                            performance.</p>
+                        <br>
+                        <p>In addition, I developed the web application Space Travelers for businesses that provide
+                            services for both commercial
+                            and research space flight. Users can book rockets on this innovative website and take part
+                            in thrilling space
+                            adventures. It smoothly connects with the api.spacexdata.com API for effective data
+                            integration and was built with
+                            JavaScript, React, and Redux.</p>
+                        <br>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-item">
+                        <h4>Sales Engineer</h4>
+                        <span class="house">CLIPPER AVIATION SUPPLY SAS</span>
+                        <span class="date">(Jan 2018 - May 2018)</span>
+
+                        <p> I made quotes for aviation fuel supply projects (hoses, dispensing guns, valves, water
+                            detectors, hydro kits,
+                            pipes for hydrant networks, and hydrant valves) for clients of the El Dorado Airport in
+                            Bogota and fuel plants
+                            in different cities of the country belonging to Terpel so that I could quickly satisfy their
+                            needs.</p>
+                        <br>
+                        <p> I provided customer service, attended to their requirements, and followed up on purchase
+                            orders with European
+                            and American suppliers.</p>
+                        <br>
+                        <p>Management working groups of more than 5 people.</p>
+                        <br>
+                        <p>I made an evaluation matrix of import costs for supplies as well as the follow-up with
+                            customs companies for
+                            their nationalization and distribution to clients. In this way, times and costs were
+                            optimized by 35% in four
+                            months, and customers became loyal by working more efficiently and taking into account
+                            possible unforeseen
+                            events.</p>
+                        <br>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-item">
+                        <h4>Company Man Assistant</h4>
+                        <span class="house">MERIDIAN CONSULTING LTDA</span>
+                        <span class="date">(May 2014 - Jan 2015)</span>
+
+                        <p> Colaborated with the creation of operational programs achieving 15% of time optimization and
+                            developed operational reporting as well as time and costs analysis..</p>
+                        <br>
+                        <p> I provided customer service, attended to their requirements, and followed up on purchase
+                            orders with European
+                            and American suppliers.</p>
+                        <br>
+                        <p>Management working groups of more than 10 people.</p>
+                        <br>
+                        <p>Developed well&apos;s final reports, including causes and consequences of problems presented.
+                        </p>
+                        <br>
+                        <p>Supported operations through counseling in order to optimize and prevent operational
+                            incidents.</p>
+                        <br>
+                        <p>Coordinated operation&apos;s equipment and tools logistics, preventing non-productive times.
+                        </p>
+                        <br>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="right-item">
+                        <h4>Operations Supervisor – Zenith Oilfield</h4>
+                        <span class="house">ADRIALPETRO PETROLEUM SERVICES S.A</span>
+                        <span class="date">(Aug 2013 - Apr 2014)</span>
+
+                        <p> Monitored the Electrical-submersible Pumping System 24/7, conducted real-time Well tests and
+                            optimized production by implementing Z-Sight equipments (Zenith Oilfield).</p>
+                        <br>
+                        <p> Performed equipment inspections on the company´s base and coordinated field equipment and
+                            tools logistics.</p>
+                        <br>
+                        <p>Created the installation programs achieving 30% of time optimization and elaborated
+                            operation´s daily reports.</p>
+                        <br>
+                        <p>Managed working teams of more than 6 people.</p>
+                        <br>
+                        <p>Interacted directly with companies such as Hocol S.A., General Electric and MASA about issues
+                            such as equipment connections to inverters and installation of Wellhead pressure
+                            transmitters.</p>
+                        <br>
+                        <p>Interacted directly with Zenith Oil Field Scotland staff for equipment installation planning,
+                            connections to drives and surface panels background sensors, testing equipment and
+                            operational support for the operator company.</p>
+                        <br>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-content">
+            <h2>Portfolio</h2>
+            <div class="galery">
+                <div class="project">
+                    <img src="./img/readme-front-end.gif" alt="frontend">
+                    <div class="overlay">
+                        
+                        <h3>Cozy-Homes Front-end</h3>
+                        <p>Cozy Homes is a web platform that offers a wide selection of comfortable and welcoming homes
+                            that can be
+                            rented for a short period of time. Cozy Homes is dedicated to providing a seamless and
+                            enjoyable user
+                            experience, ensuring that guests feel at home no matter where they are. This project was
+                            built with
+                            HTML5, CSS3, JavaScript, React.js, Redux Toolkit. <a class="plink" href="https://github.com/Juanpa8830/cozy-homes-front-end">Visit</a></p>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="./img/readme-back-end.gif" alt="backend">
+                
+                    <div class="overlay">
+                        
+                        <h3>Cozy-Homes Back-end</h3>
+                        <p>Cozy Homes is a web platform that offers a wide selection of comfortable and welcoming homes
+                            that can be
+                            rented for a short period of time. Cozy Homes is dedicated to providing a seamless and
+                            enjoyable user
+                            experience, ensuring that guests feel at home no matter where they are. This project was
+                            built using the
+                            robust Ruby on Rails API framework. <a class="plink" href="https://github.com/Juanpa8830/cozy-homes-back-end">Visit</a></p>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <img src="./img/mybudget.png" alt="mybudget">
+                
+                    <div class="overlay">
+                       
+                        <h3>My-Budget</h3>
+                        <p>My-budget, is a mobile web application where you can admin your own budget: Users have a list
+                            of movements
+                            associated with a category, so that they can see the record of their expenses. I developed
+                            this project with
+                            Cascading Style Sheets (CSS), PostgreSQL, Ruby on Rails.  <a class="plink" href="https://github.com/Juanpa8830/My-budget">Visit</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./img/Americapop.png" alt="mybudget">
+                    <div class="overlay">
+                        
+                        <h3>America&apos;s Population</h3>
+                        <p>This is a WebApp that allow users to look for the countries of the American continent
+                            filtered by name. They
+                            are also allowed to see additional details of each country in the list. I developed this
+                            project with
+                            HTML5, Cascading Style Sheets (CSS), JavaScript, React.js, Redux Toolkit. <a class="plink" href="https://github.com/Juanpa8830/react-capstone-metrix">Visit</a></p>
+                    </div>
+                </div>
+                
+                
+                    <div class="project">
+                    <img src="./img/leaderboard.png" alt="leaderboard">
+                    <div class="overlay">
+                        
+                        <h3>Leaderboard</h3>
+                        <p>"Leaderboard" is an application that allows user to register user names and their respective
+                            scores. These scores are displayed after getting the data from an API. I developed this
+                            project with
+                            HTML5, Cascading Style Sheets (CSS), JavaScript. <a class="plink" href="https://github.com/Juanpa8830/Leaderboard">Visit</a></p>
+                    </div>
+                
+                </div>
+                <div class="project">
+                    <img src="./img/Math-magi.png" alt="math"></a>
+                    <div class="overlay">
+                        
+                        <h3>Math Magicians</h3>
+                        <p>This is a WebApp that shows three pages: home, calculator and quote. Each one of the pages
+                            displays some
+                            information. Furthermore, the Calculator page displays a functional calculator that is free
+                            and easy to use
+                            by users. I developed this project with HTML5, Cascading Style Sheets (CSS), JavaScript,
+                            Webpack and
+                            React. <a class="plink" href="https://github.com/Juanpa8830/React-Math-magicians">Visit</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- SECTION CONTACT-->
+
+<section id="contact" class="contact">
+    <div class="contact-section">
+        <h2>Contact me</h2>
+        <div class="row">
+            <!-- Form-->
+            <div class="column">
+                <form id="form" action="https://formspree.io/f/xyyaqlpg" method="post">
+                    <input id="form_name" type="text" placeholder="Name" name="name" maxlength="30" required>
+                    <input id="phone" type="number" placeholder="Phone number" name="Phone number" required>
+                    <input type="email" id="email" placeholder="Email" name="Email" required>
+                    <input type="text" id="subject" placeholder="Subject" name="Subject" required maxlength="30">
+                    <textarea name="message" for="message" id="message" cols="30" rows="10" placeholder="Message" maxlength="500"
+                        required></textarea>
+                    <small id="error_message"></small>
+                    <button type="submit">
+                        Submit <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+            </div>
+            <!-- map-->
+            <div class="column">
+                <img src="img/Ubicacion.png" alt="location">
+                <div class="info">
+                    <ul>
+                        <li>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                         Street 23C # 72-50 Bogotá, Colombia.
+                        </li>
+
+                        <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                         Contact me: +57-300-2690883
+                        </li>
+                        <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: guerrerrorios.juanpablo@gmail.com
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <a href="#inicio" class="up">
+        <i class="fa-sharp fa-solid fa-angles-up"></i>
+    </a>
+    <div class="social">
+        <a href="https://github.com/Juanpa8830"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/juanpabloguerrerorios/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/JuanPa8830"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://wellfound.com/juan-pablo-guerrero-rios"><i class="fa-brands fa-angellist"></i></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
