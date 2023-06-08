@@ -1,0 +1,861 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* permite deslizar cuando hago click en los links del menu */
+  scroll-behavior: smooth;
+}
+
+.header-container {
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.header-container header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+footer .social a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 30px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.header-container header nav ul li a {
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.header-container header .logo a {
+  font-family: 'Righteous', sans-serif;
+  font-size: 36px;
+  color: #1cb698;
+  text-decoration: none;
+}
+
+.header-container header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-container header nav ul li a:hover {
+  color: #1cb698;
+  font-weight: 800;
+}
+
+.nav-responsive {
+  background-color: #1cb698;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* INICIO */
+
+.inicio {
+  background:
+    linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1)),
+    url(img/fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: -30px;
+}
+
+.inicio .banner-content {
+  padding: 20px;
+  background-color: #1e2326;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+.inicio .banner-content img {
+  border: 10px solid #2cb698;
+  display: block;
+  width: 60%;
+  margin: auto;
+  border-radius: 80%;
+}
+
+.inicio .banner-content h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: 'Righteous', sans-serif;
+}
+
+.aboutme h2 {
+  font-size: 48px;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.skills h2 {
+  font-size: 48px;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.curriculum h2 {
+  font-size: 48px;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.portfolio h2 {
+  font-size: 48px;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.contact h2 {
+  font-size: 48px;
+  font-family: 'Righteous', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.inicio .banner-content h2,
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.skills h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #1cb698;
+  font-weight: bold;
+}
+
+.inicio .banner-content h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.inicio .banner-content .social a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 30px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.inicio .banner-content .social a:hover {
+  background-color: #1cb698;
+}
+
+/* About me */
+
+.aboutme {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.aboutme .content-section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.content-section p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.content-section p span {
+  color: #1cb698;
+  font-weight: bold;
+}
+
+.aboutme .row {
+  display: flex;
+}
+
+.contact .column {
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.aboutme .row .column {
+  width: 50%;
+}
+
+.curriculum .row h3 {
+  font-size: 28px;
+  font-family: 'Righteous', sans-serif;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.aboutme .row .column h3 {
+  font-size: 28px;
+  font-family: 'Righteous', sans-serif;
+  margin-bottom: 25px;
+}
+
+.aboutme .row .column ul {
+  list-style: none;
+}
+
+.aboutme .row .column ul li {
+  margin: 26px 0;
+}
+
+.aboutme .row .column ul li strong {
+  display: inline-block;
+  color: #1cb698;
+  width: 130px;
+}
+
+.skills .skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.skills .skill .bar-skill span {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1cb698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+}
+
+.aboutme .row .column ul li span {
+  background-color: #1cb698;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.aboutme .row .column .interests-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutme .row .column .interests-container .interest {
+  width: 120px;
+  height: 100px;
+  background-color: #252a2e;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.aboutme .row .column .interests-container .interest:hover {
+  background-color: #1cb698;
+}
+
+.contact .column .info ul li i {
+  color: #1cb698;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.aboutme .row .column .interests-container .interest i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact button {
+  top: 4%;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.contact button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.aboutme button .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1cb698;
+  z-index: -1;
+  transition: 0.7s;
+}
+
+.contact button:hover .overlay {
+  width: 100%;
+}
+
+.aboutme button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.aboutme button:hover .overlay {
+  width: 100%;
+}
+
+#resume a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* SKILLS */
+
+.skills {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.skills .skill-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.skills .row {
+  display: flex;
+}
+
+.skills .row .column {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.skills .skill .bar-skill {
+  height: 8px;
+  width: 80%;
+  background-color: #131517;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.skills .skill .progress {
+  background-color: #1cb698;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8px;
+}
+
+
+/* estas clases se agregan dinamicamente con js */
+.skills .skill .javascript {
+  width: 0%;
+  animation: 3s javascript forwards;
+}
+
+@keyframes javascript {
+  0% { width: 0%; }
+  100% { width: 79%; }
+}
+
+.skills .skill .htmlcss {
+  width: 0%;
+  animation: 3s htmlcss forwards;
+}
+
+@keyframes htmlcss {
+  0% { width: 0%; }
+  100% { width: 80%; }
+}
+
+.skills .skill .react {
+  width: 0%;
+  animation: 3s react forwards;
+}
+
+@keyframes react {
+  0% { width: 0%; }
+  100% { width: 78%; }
+}
+
+.skills .skill .Ruby {
+  width: 0%;
+  animation: 3s Ruby forwards;
+}
+
+@keyframes Ruby {
+  0% { width: 0%; }
+  100% { width: 77%; }
+}
+
+.skills .skill .postgre {
+  width: 0%;
+  animation: 3s postgre forwards;
+}
+
+@keyframes postgre {
+  0% { width: 0%; }
+  100% { width: 80%; }
+}
+
+.skills .skill .Github {
+  width: 0%;
+  animation: 3s Github forwards;
+}
+
+@keyframes Github {
+  0% { width: 0%; }
+  100% { width: 80%; }
+}
+
+.skills .skill .Collaboration {
+  width: 0%;
+  animation: 3s Collaboration forwards;
+}
+
+@keyframes Collaboration {
+  0% { width: 0%; }
+  100% { width: 90%; }
+}
+
+.skills .skill .Communication {
+  width: 0%;
+  animation: 3s Communication forwards;
+}
+
+@keyframes Communication {
+  0% { width: 0%; }
+  100% { width: 90%; }
+}
+
+.skills .skill .discipline {
+  width: 0%;
+  animation: 3s discipline forwards;
+}
+
+@keyframes discipline {
+  0% { width: 0%; }
+  100% { width: 90%; }
+}
+
+.skills .skill .creativity {
+  width: 0%;
+  animation: 3s creativity forwards;
+}
+
+@keyframes creativity {
+  0% { width: 0%; }
+  100% { width: 95%; }
+}
+
+.skills .skill .Problem-Solving {
+  width: 0%;
+  animation: 3s Problem-Solving forwards;
+}
+
+@keyframes Problem-Solving {
+  0% { width: 0%; }
+  100% { width: 85%; }
+}
+
+.skills .skill .planning {
+  width: 0%;
+  animation: 3s planning forwards;
+}
+
+@keyframes planning {
+  0% { width: 0%; }
+  100% { width: 95%; }
+}
+
+/* CURRICULUM */
+
+.curriculum {
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.curriculum .curriculum-content {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.curriculum .row {
+  display: flex;
+}
+
+.curriculum .row .col {
+  width: 70%;
+  padding: 0 20px;
+}
+
+.curriculum .row .left-col {
+  border-right: 10px solid #1e2326;
+}
+
+.curriculum .row .right-col {
+  border-left: 10px solid #1e2326;
+}
+
+.curriculum .row .left-item,
+.curriculum .row .right-item {
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #252a2e;
+  position: relative;
+}
+
+.curriculum .row .left-item h4,
+.curriculum .row .right-item h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.curriculum .row .left-item .house,
+.curriculum .row .right-item .house {
+  color: #1cb698;
+  font-size: 22px;
+  font-family: bold;
+  display: block;
+}
+
+.curriculum .row .left-item .date,
+.curriculum .row .right-item .date {
+  display: block;
+  color: #1cb698;
+  margin-bottom: 10px;
+}
+
+.curriculum .row .left-item p {
+  line-height: 24px;
+}
+
+.curriculum .row .left-item {
+  border-right: 2px solid #1cb698;
+  margin-right: 20px;
+}
+
+.curriculum .row .right-item {
+  border-left: 2px solid #1cb698;
+  margin-left: 20px;
+}
+
+.curriculum .row .left-item .conectori {
+  height: 2px;
+  background-color: #1cb698;
+  width: 47px;
+  position: absolute;
+  top: 50%;
+  right: -47px;
+  z-index: 5;
+}
+
+.curriculum .row .left-item .conectori .circuloi {
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #1cb698;
+  float: right;
+  position: relative;
+  bottom: 4px;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  background-color: #252a2e;
+  color: #fff;
+  padding: 90px 20px;
+}
+
+.portfolio .portfolio-content {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.portfolio .galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio .galery .project {
+  position: relative;
+  max-width: 340px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.contact .column img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio .galery .project img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.portfolio .galery .project .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.9));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 15px;
+  letter-spacing: 1px;
+  opacity: 0;
+}
+
+.portfolio .galery .project .overlay h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.portfolio .galery .project .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .galery .project .overlay:hover h3 {
+  margin-bottom: 0;
+  color: #252a2e;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CONTACT */
+
+.contact {
+  background-image: url(./img/contact_bg.png);
+  background-color: #1e2326;
+  color: #fff;
+  padding-top: 60px;
+}
+
+.contact .contact-section {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.contact .row {
+  display: flex;
+}
+
+.contact .column input,
+.contact .column textarea {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #252a2e;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact .column .info {
+  position: absolute;
+  top: 55%;
+  background-color: #252a2e;
+  padding: 20px;
+  max-width: 380px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact .column .info ul {
+  list-style: none;
+}
+
+.contact .column .info ul li {
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #252a2e;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+footer .up {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #1cb698;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+
+  nav.responsive {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 180px;
+  }
+
+  nav.responsive ul {
+    display: block !important;
+  }
+
+  nav.responsive ul li {
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .aboutme .row {
+    display: block;
+  }
+
+  .aboutme .row .column {
+    width: fit-content;
+  }
+
+  .skills .row {
+    display: block;
+  }
+
+  .skills .row .column {
+    width: 100%;
+  }
+
+  .skills .row .column .bar-skill {
+    width: 100%;
+  }
+
+  .curriculum .row {
+    display: block;
+  }
+
+  .curriculum .row .left-col {
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .curriculum .row .right-col {
+    margin-right: 15px;
+  }
+
+  .portfolio .galery {
+    display: block;
+    width: 100%;
+  }
+
+  .portfolio .galery .project {
+    max-width: 100%;
+  }
+
+  .portfolio .galery .project img {
+    width: 100%;
+  }
+
+  .contact .row {
+    display: block;
+  }
+
+  .contact .row .column {
+    width: 100%;
+  }
+}
